@@ -32,3 +32,13 @@ Git Life Cycle:
 		3)If suppose we change/modify/update B.txt and chk git status it will show A.txt and B.txt are ready for commit in the staging area at the same time it will show modified files are B.txt.
 		4)But upon firing git commit it commits A.txt and B.txt(older Version) which was in the staging area not the modified one.
 		5)To commit the modified B.txt we have to stage B.txt again in to the staging area and now it becomes unmodified after staging it and we can commit it. 
+
+11) git diff: compares working directory and staging area. 
+
+12) git diff --cached or git diff --staged : compares Staging Area and Last Commit, to see the changes that are staged for the next commit
+
+13) git diff HEAD : to compare Working Directory and Last Commit, changes in your working directory compared to the last commit.
+
+	if no difference then gives nothing.
+
+14) git commit -a -m : shorthand way to stage and commit changes in one step. if A.txt is already committed and later on changed then it is in working directory so we have stage again and then commit but using this command does it in one go. This option automatically stages all changes in the working directory (both modifications and deletions) before committing. It does not include untracked files.(generally new files.)
