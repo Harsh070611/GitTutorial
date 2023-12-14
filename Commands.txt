@@ -45,3 +45,5 @@ Git Life Cycle:
 
 
 15) git rm <filename> : to delete a file from repo and it goes for staging that file is deleted. if we commit then chnages are made.
+
+16) git mv <old Filename> <new file name> : to rename a file, later it goes for staging and we have to commit the rename change.
