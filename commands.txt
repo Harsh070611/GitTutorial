@@ -1,0 +1,34 @@
+The '.git' folder is a hidden directory at the root of a Git repository, and it contains all the configuration files, object database, and other important information that Git needs to manage the repository. This folder is crucial for the functioning of Git
+Tracking:
+
+
+1) git status : to check the status of the repositry.
+
+2) git init : to create a empty repositry.
+
+3) git add --a : to add the files in the staging area. --a represents select all.
+
+4) git commit: to commit the files in staging area.
+
+5) git commit -m "msg" : to give the mesaage along with commit.
+
+6) git log : used to display the commit history of a Git repository. When you run this command, Git will show you a list of commits in 				reverse chronological order, starting from the most recent commit.
+
+After commiting. If some changes are made in file then git will track the changes upon firing git status command
+
+
+7) git add testing.txt : To add a specific file in staging area use:
+
+8) rm -rf .git : to completely delete a repositry.
+
+9) git clone "url"  <name of the directory> :Clone a repository into a new directory
+
+10) pwd: gives present working directory in which we are.
+
+Git Life Cycle:
+	suppose there are two files A.txt and B.txt Life cycle Process:
+		1) Untracked: none of the files are tracked, to track use git init and git add --a
+		2) After tracking these files are added in staging area and  unmodified.
+		3)If suppose we change/modify/update B.txt and chk git status it will show A.txt and B.txt are ready for commit in the staging area at the same time it will show modified files are B.txt.
+		4)But upon firing git commit it commits A.txt and B.txt(older Version) which was in the staging area not the modified one.
+		5)To commit the modified B.txt we have to stage B.txt again in to the staging area and now it becomes unmodified after staging it and we can commit it. 
