@@ -41,4 +41,4 @@ Git Life Cycle:
 
 	if no difference then gives nothing.
 
-14) git commit -a -m : shorthand way to stage and commit changes in one step. if A.txt is already committed and later on changed then it is in working directory so we have stage again and then commit but using this command does it in one go. This option automatically stages all changes in the working directory (both modifications and deletions) before committing. It does not include untracked files.(generally new files.)
+14) git commit -a -m : shorthand way to stage and commit changes in one step. if A.txt is already committed and later on changed then it is in working directory so we have stage again and then commit but using this command does it in one go. This option automatically stages all changes in the working directory (both modifications and deletions) before committing. It does not include untracked files.(generally new files).
